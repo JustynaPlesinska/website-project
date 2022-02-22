@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most visited European countries</title>
+    <style>
+        body {
+        background: linear-gradient(-20deg, #fbfcdb 0%, #e9defa 100%);
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        }
+        h1 {
+            font-size: 55px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .europe {
+            overflow: hidden;
+            display: inline-block;
+            padding: 0px;
+            font-size: 55px;
+            height: 55px;
+            line-height: 55px;
+        }
+
+        .europe span {
+            animation: move 6s ease-in-out forwards infinite;
+            position: relative;
+        }
+
+        @keyframes move {
+            0%,
+            100% {
+                top: 0px;
+            }
+            25% {
+                top: -60px;
+            }
+            65% {
+                top: -115px;
+            }
+            95% {
+                top: -170px;
+            }
+        }
+        h2 {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 250;
+            font-size: 33px;
+            padding: 0 50px 0 30px;
+            line-height: 1.5;
+        }
+        h3 {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 450;;
+            margin: -10px auto 30px auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            max-width: 520px;
+            padding: 0 0 3px 0;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+            transition: all 200ms ease-in-out;
+            opacity: 20%;
+        }
+        h3:hover {
+            background: #ffcab0;
+            cursor: help;
+            color: #393e46;
+            opacity: 100%;
+        }
+        .coder {
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 100;
+            opacity: 75%;
+        }
+        p {
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 100;
+            font-style: italic;
+            opacity: 75%;
+        }
+        footer {
+            text-align: right;
+            margin: 10px 10px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 400;
+            opacity: 50%;
+        }
+        .paris:hover:after {
+            content: "... Notre Dame, Cannes, Croissant"
+        }
+        .barcelona:hover:after {
+            content: "... Siesta, Sagrada Familia, Paella"
+        }
+        .rome:hover:after {
+            content: "... Pizza, Pasta, Vespa"
+        }
+        .istanbul:hover:after {
+            content: "... Istanbul, Hot air baloons"
+        }
+        .berlin:hover:after {
+            content: "... Oktoberfest, Brandenburg Gate"
+        }
+        .london:hover:after {
+            content: "... Fish and chips, Accent, Royals"
+        }
+        .vienna:hover:after {
+            content: "... Mozart, Sachertorte, Alps"
+        }
+        .athens:hover:after {
+            content: "... Acropolis, Socrates, Pythagoras"
+        }
+        .moscow:hover:after {
+            content: "... Dostoevsky, Vodka, The Pole of Cold"
+        }
+        span {
+            position: relative;
+            display: inline-block;
+        }
+        .city {
+            border: 10px solid #ffcab0;
+            border-radius: 30px;
+            margin: 20px 15px 20px 60px;
+            cursor: crosshair;
+        }
+        .image {
+            position: relative;
+            display: block;
+            width: 400px;
+            height: 400px;
+            padding: 25px 40px;
+            margin: 10px 20px;
+        }
+        button {
+        display: block;
+        margin: 30px auto 30px auto;
+        padding: 5px 15px 10px 15px;
+        font-size: 40px;
+        color: #393e46;
+        background: transparent;
+        border: 3px solid black;
+        border-radius: 25px;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+          background: #393e46;
+          color: #ffcab0;
+          cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+    <h1>
+      9 most visited countries in 
+      <div class="europe">
+            <span>
+            Europe
+            </br>
+            Еврoпа
+            </br>
+            Europa
+            </br>
+            欧洲
+          </span>
+      </div>
+    </h1>
+    <h2>
+    <hr>
+        Europe is the global leader in international tourism, with over 700 million inbound tourists arriving in the region each year. 
+        Here is a list of the top 9 
+        <a href="https://www.schengenvisainfo.com/travel-guide/top-10-most-visited-european-countries/" target="_blank" style="text-decoration: none; font-style: italic; color: black;">
+        countries
+        </a>
+        ! Can you recognize them based on the main attractions?
+    </h2>
+    <h3>
+        Pro tip: hover over the tooltip under the photo if you need help!
+    </h3>
+    <h2>
+        <hr>
+    </h2>
+    <div>
+        <span class="city">
+            <img class="image"
+            src="https://www.clipartmax.com/png/full/90-908034_vector-illustration-of-eiffel-tower-on-champ-de-mars-tower.png">
+            <p class="paris">
+            Hint
+            </p>
+        </span>
+         <span class="city">
+            <img class="image"
+            src="https://www.clipartmax.com/png/full/93-932428_vector-illustration-of-double-decker-bus-in-london-big-ben-clip-art.png">
+            <p class="london">
+            Hint
+            </p>
+        </span>
+        <span class="city">
+            <img class="image"
+            src="https://www.clipartmax.com/png/full/135-1359088_vector-illustration-of-st-basils-orthodox-christian-through-russia-als-ebook-von.png">
+            <p class="moscow">
+            Hint
+            </p>
+        </span>
+        <span class="city">
+            <img class="image"
+            src="https://www.clipartmax.com/png/full/255-2558603_vector-illustration-of-camp-nou-new-field-football-barcelona-stadium-clipart.png">
+            <p class="barcelona">
+            Hint
+            </p>
+        </span>
+        <span class="city">
+            <img class="image"
+            src="https://www.clipartmax.com/png/full/86-864534_coliseum-colosseum-rome-free-vector-graphic-on-pixabay-coloseum-clipart-no-background.png">
+            <p class="rome">
+            Hint
+            </p>
+        </span>
+        <span class="city">
+            <img class="image"
+            src="https://www.clipartmax.com/png/full/231-2314099_symbolicities-messages-sticker-6-istanbul.png">
+            <p class="istanbul">
+            Hint
+            </p>
+        </span>
+        <span class="city">
+            <img class="image"
+            src="https://www.clipartmax.com/png/full/35-355444_vector-illustration-of-brandenburg-gate-german-neoclassical-porta-di-brandeburgo-png.png">
+            <p class="berlin">
+            Hint
+            </p>
+        </span>
+        <span class="city">
+            <img class="image"
+            src="https://www.clipartmax.com/png/full/14-144000_cool-church-clipart-images-stephansdom-clipart-clipground-vienna-clipart.png">
+            <p class="vienna">
+            Hint
+            </p>
+        </span>
+        <span class="city">
+            <img class="image"
+            src="https://www.clipartmax.com/png/full/218-2189939_vector-illustration-of-windmill-on-greek-santorini-vector-illustration-of-windmill-on.png">
+            <p class="athens">
+            Hint
+            </p>
+        </span>
+    <br>
+    <br>
+    <button>
+        <strong>
+            Share your score! 😏
+        </strong>
+    </button>
+    </div>
+    <br>
+    <br>
+    <p class="coder">
+        Made with 🧡 and many cups of ☕ by 
+        <a href="https://www.linkedin.com/in/justynaplesinska/" target="_blank" style="text-decoration: none; color: black; text-shadow: orange 1px 0 10px;">
+            Justyna Plesinska
+        </a>
+    </p>
+    <footer>
+        February 2022
+    </footer>
+    <script>
+        function howMany() {
+        let number = prompt("How many you got right?");
+        let numberOnButton = document.querySelector("button");
+
+        if (number <= 3) {
+        numberOnButton.innerHTML = "I think you need to travel ASAP! 🙊";
+        } else
+        if (number > 6) {
+        numberOnButton.innerHTML = "Congratulations! You did it great! 🎉";
+            } else {
+            numberOnButton.innerHTML = "There's still some travelling to do, huh? 😉";
+            }
+        }
+        let howManyCities = document.querySelector("button");
+
+        howManyCities.addEventListener("click", howMany);
+    </script>
+</body>
+</html>
